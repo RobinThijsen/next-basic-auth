@@ -1,0 +1,26 @@
+{
+  "name": "next-basic-auth",
+  "version": "1.1.0",
+  "description": "basic authentication with prisma on next.js",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "postinstall": "npm run-script build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobinThijsen/next-basic-auth.git"
+  },
+  "author": "Robin Thijsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RobinThijsen/next-basic-auth/issues"
+  },
+  "homepage": "https://github.com/RobinThijsen/next-basic-auth#readme",
+  "dependencies": {
+    "@prisma/client": "^5.4.1",
+    "bcrypt": "^5.1.1",
+    "next": "^13.5.4",
+    "prisma": "^5.4.1"
+  }
+}
