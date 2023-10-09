@@ -6,13 +6,13 @@
 `npm install next-basic-auth`
 or
 `npm i next-basic-auth`
-then init your database in backward with MAMP or WAMP for example. [MAMP](https://www.mamp.info/en/mamp-pro/mac/)
+then init your database in backward, WAMP or MAMP is a good way. [MAMP](https://www.mamp.info/en/mamp-pro/mac/)
 
 2. When it's done, run
 `npx prisma init --datasource-provider mysql|sqlite|...`
 Doc of prisma for more information about database [here](https://www.prisma.io/docs/guides)
 
-3. After that, go on `/prisma/schema.prisma` and create a db model like this for example:
+3. After that, go on `/prisma/schema.prisma` and create a db model `user` (the name is really important):
 ```prisma
 model user {
   uid        Int       @id @default(autoincrement())
